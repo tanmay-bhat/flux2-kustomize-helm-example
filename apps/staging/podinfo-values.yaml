@@ -7,12 +7,5 @@ spec:
   chart:
     spec:
       version: ">=1.0.0-alpha"
-  test:
-    enable: false
   values:
-    ingress:
-      hosts:
-        - host: podinfo.staging
-          paths:
-            - path: /
-              pathType: ImplementationSpecific
+    replicaCount: 3
